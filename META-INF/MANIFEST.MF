@@ -2,11 +2,11 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Titanium NPMify Core
 Bundle-SymbolicName: it.smc.titanium.npmify.core;singleton:=true
-Bundle-Version: 0.4.8.d9
+Bundle-Version: 0.4.10
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: com.aptana.core
 Bundle-Vendor: SMC Treviso s.r.l.
 Bundle-Activator: it.smc.titanium.npmify.core.NPMifyCorePlugin
+Bundle-ActivationPolicy: lazy
 Import-Package: com.google.debugging.sourcemap,
  com.google.debugging.sourcemap.proto
-Bundle-ActivationPolicy: lazy
