@@ -5,45 +5,24 @@
 		id="nature"
 		name="NPMify"
 		point="org.eclipse.core.resources.natures">
-
 		<runtime>
-			<run
-				class="it.smc.titanium.npmify.core.NPMifyProjectNature">
+			<run class="it.smc.titanium.npmify.core.NPMifyProjectNature">
 			</run>
 		</runtime>
-      <content-type
-            id="com.aptana.contenttype.css">
-      </content-type>
-      <content-type
-            id="com.aptana.contenttype.dtd">
-      </content-type>
-      <content-type
-            id="com.aptana.contenttype.html">
-      </content-type>
-      <content-type
-            id="com.aptana.contenttype.js">
-      </content-type>
-      <content-type
-            id="com.aptana.contenttype.jsca">
-      </content-type>
-      <content-type
-            id="com.appcelerator.titanium.contenttype.jss">
-      </content-type>
-      <content-type
-            id="com.aptana.contenttype.markdown">
-      </content-type>
-      <content-type
-            id="com.aptana.contenttype.sdocml">
-      </content-type>
-      <content-type
-            id="com.aptana.editor.text.content-type.generic">
-      </content-type>
-      <content-type
-            id="com.appcelerator.contenttype.tss">
-      </content-type>
-      <content-type
-            id="com.appcelerator.contenttype.txml">
-      </content-type>
+
+		<requires-nature id="com.appcelerator.titanium.mobile.nature" />
+
+		<content-type id="com.aptana.contenttype.css"></content-type>
+		<content-type id="com.aptana.contenttype.dtd"></content-type>
+		<content-type id="com.aptana.contenttype.html"></content-type>
+		<content-type id="com.aptana.contenttype.js"></content-type>
+		<content-type id="com.aptana.contenttype.jsca"></content-type>
+		<content-type id="com.appcelerator.titanium.contenttype.jss"></content-type>
+		<content-type id="com.aptana.contenttype.markdown"></content-type>
+		<content-type id="com.aptana.contenttype.sdocml"></content-type>
+		<content-type id="com.aptana.editor.text.content-type.generic"></content-type>
+		<content-type id="com.appcelerator.contenttype.tss"></content-type>
+		<content-type id="com.appcelerator.contenttype.txml"></content-type>
 	</extension>
 	<extension
 		point="com.aptana.core.sourceMaps">
@@ -51,9 +30,9 @@
 			class="it.smc.titanium.core.sourcemap.BrowserifySourceMap"
 			id="it.smc.titanium.npmify.core.sourceMap"
 			name="NPMify Source Maps"
-            projectNatureId="it.smc.titanium.npmify.core.nature"
-            generatedBundleLocation="Resources/{0}/bundle.js"
-            bundleMapLocation="build/map/Resources/{0}/bundle.js.map">
+			projectNatureId="it.smc.titanium.npmify.core.nature"
+			generatedBundleLocation="Resources/{0}/bundle.js"
+			bundleMapLocation="build/map/Resources/{0}/bundle.js.map">
 		</sourceMap>
 	</extension>
 </plugin>
